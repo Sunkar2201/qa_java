@@ -42,13 +42,13 @@ public class TestLionGetSexMaleFemale {
         /*создали обхект класса  Lion. Так как имеет конструктор - заполнили его
         переменной sexLion из параметризованного теста выше
         feline-болванку добавили для отработки конструктора из класса Lion*/
-        boolean c = lion.doesHaveMane();
+        boolean hasMane = lion.doesHaveMane();
         /*так как в конструкторе класса Lion имеется конструкция if-else,
         дающая для метода doesHaveMane() значение в переменную boolean hasMane
         проверяем этот метод
          */
-        System.out.println(c);
-        assertEquals(expected,c);
+        System.out.println(hasMane);
+        assertEquals(expected,hasMane);
         /*сравниваем ожидаемое значение с помощью переменной конструктора выше и
         полученное из метода lion.doesHaveMane()
          */

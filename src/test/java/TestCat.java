@@ -27,8 +27,12 @@ public class TestCat {
         Cat cat = new Cat(feline);
         List<String> expected = List.of("Животные", "Птицы", "Рыба");
         //сделали массив списком
+        Mockito.when(cat.getFood()).thenReturn(List.of("Животные", "Птицы", "Рыба"));
+        //применили стаб
         List<String> actual = cat.getFood();//внесли в переменную массив ответа
         //на метод getFood
+        System.out.println("Ожидаемое значение " + expected);
+        System.out.println("Фактическое значение " + actual);
         assertEquals(expected, actual);//сравнили их
     }
 }
